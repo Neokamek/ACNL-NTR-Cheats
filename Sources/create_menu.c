@@ -1,4 +1,5 @@
 #include "cheats.h"
+#include "LeafToolsNEO/LeafToolsNEO.h"
 
 char	*builder_name = "itsRyan";
 
@@ -107,6 +108,9 @@ void	usa_menu(void)
 		index = new_entry("Time Machine", timeMachine_usa);
 			set_note(tm, index);
 	exit_spoiler();
+	
+	// NeoKamek - Builds the LeafTools sub-menu
+	BuildLeafToolsMenu();
 }
 
 void	eur_menu(void)

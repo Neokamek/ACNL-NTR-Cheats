@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\libShark2NTR">
+      <UniqueIdentifier>{66060349-7697-4c18-a6f8-87037af723d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ACNL-NTR-Cheats">
+      <UniqueIdentifier>{cbec47a9-53de-48d4-9361-7583b715dbdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ACNL-NTR-Cheats">
+      <UniqueIdentifier>{7d652b2d-7283-47a4-a036-5262395e2bb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LeafTools NEO">
+      <UniqueIdentifier>{dcf560ff-fc25-4a4a-bfdb-e9d34537328f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ACNL-NTR-Cheats\LeafTools NEO">
+      <UniqueIdentifier>{97c64908-b9b2-49d1-9fa4-6ec59de3668e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Includes\common.h">
+      <Filter>Header Files\libShark2NTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Includes\configs.h">
+      <Filter>Header Files\libShark2NTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Includes\hid.h">
+      <Filter>Header Files\libShark2NTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Includes\plugin.h">
+      <Filter>Header Files\libShark2NTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Includes\result.h">
+      <Filter>Header Files\libShark2NTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Includes\types.h">
+      <Filter>Header Files\libShark2NTR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\cheats.h">
+      <Filter>Header Files\ACNL-NTR-Cheats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\config.h">
+      <Filter>Header Files\ACNL-NTR-Cheats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sources\LeafToolsNEO\LeafToolsNEO.h">
+      <Filter>Header Files\ACNL-NTR-Cheats\LeafTools NEO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Sources\cheats_eur.c">
+      <Filter>Source Files\ACNL-NTR-Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\cheats_jap.c">
+      <Filter>Source Files\ACNL-NTR-Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\cheats_usa.c">
+      <Filter>Source Files\ACNL-NTR-Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\config.c">
+      <Filter>Source Files\ACNL-NTR-Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\create_menu.c">
+      <Filter>Source Files\ACNL-NTR-Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\helpers.c">
+      <Filter>Source Files\ACNL-NTR-Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\LeafToolsNEO\LeafToolsNEO.c">
+      <Filter>Source Files\LeafTools NEO</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\acnl_background.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\cheats_logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\hotkeys_logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\note_rect.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\note_rounded.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\Resources\speed_logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

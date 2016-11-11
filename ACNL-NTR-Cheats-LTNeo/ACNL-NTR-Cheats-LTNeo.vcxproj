@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Default|ARM">
+      <Configuration>Default</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Default|Win32">
+      <Configuration>Default</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Default|x64">
+      <Configuration>Default</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Includes\common.h" />
+    <ClInclude Include="..\Includes\configs.h" />
+    <ClInclude Include="..\Includes\hid.h" />
+    <ClInclude Include="..\Includes\plugin.h" />
+    <ClInclude Include="..\Includes\result.h" />
+    <ClInclude Include="..\Includes\types.h" />
+    <ClInclude Include="..\Sources\cheats.h" />
+    <ClInclude Include="..\Sources\config.h" />
+    <ClInclude Include="..\Sources\LeafToolsNEO\LeafToolsNEO.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Sources\cheats_eur.c" />
+    <ClCompile Include="..\Sources\cheats_jap.c" />
+    <ClCompile Include="..\Sources\cheats_usa.c" />
+    <ClCompile Include="..\Sources\config.c" />
+    <ClCompile Include="..\Sources\create_menu.c" />
+    <ClCompile Include="..\Sources\helpers.c" />
+    <ClCompile Include="..\Sources\LeafToolsNEO\LeafToolsNEO.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\acnl_background.png" />
+    <Image Include="..\Resources\cheats_logo.png" />
+    <Image Include="..\Resources\hotkeys_logo.png" />
+    <Image Include="..\Resources\note_rect.png" />
+    <Image Include="..\Resources\note_rounded.png" />
+    <Image Include="..\Resources\speed_logo.png" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B42E0B8-ADB7-4582-914D-CA9E972B2504}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Default|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Default|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Default|ARM'">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Default|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Default|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Default|Win32'">
+    <NMakeBuildCommandLine>build.bat</NMakeBuildCommandLine>
+    <NMakeOutput>plugin\plugin\0004000000086300\ACNL_MULTI_USA.plg</NMakeOutput>
+    <NMakeReBuildCommandLine>build.bat</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>Includes\*.h;Sources\*.h;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Default|ARM'">
+    <ExecutablePath />
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <NMakeBuildCommandLine>$(SolutionDir)..\buildNEO.bat $(SolutionDir)..</NMakeBuildCommandLine>
+    <NMakeIncludeSearchPath>$(SolutionDir)..\Sources;$(SolutionDir)..\Includes</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
